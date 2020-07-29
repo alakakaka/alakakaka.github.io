@@ -6,7 +6,18 @@
 </head>
 
 <body>
-	<script type="text/javascript" src="jiutun.json"></script>
+	<script type="text/javascript">
+  
+	var flightHandler = function(data){
+		alert('你结果是:' + data.jiutun + '!');
+	};
+	var url = "https://github.com/alakakaka/alakakaka.github.io/blob/master/jiutun.json";
+
+	var script = document.createElement('script');
+	script.setAttribute('src', url);
+
+	document.getElementsByTagName('head')[0].appendChild(script); 
+	</script>
 
 </body>
 
