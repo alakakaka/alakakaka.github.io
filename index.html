@@ -5,18 +5,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
   <title>瓜瓜最棒一点也不憨憨！</title>
   <style>
-        .first {
-            width: 47%;
-            float:left;
-            height: 1000px;
-       
-        }
-        .second {
-            width: 47%;
-            float:right;
-            height: 1000px;
+        .top {
+            width: 100%;
+			height: 0;
+			padding-bottom: 60%;
+			background-image:url(jiutun_background.jpg);
+			background-repeat:no-repeat;
+			background-size: 100% auto; 
 
         }
+        .bottom {
+            width: 100%;
+			height: 0;
+			padding-bottom: 60%;
+			background-image:url(cimu_background.jpg);
+			background-repeat:no-repeat;
+			background-size: 100% auto;
+        }
+
     </style>
 </head>
  
@@ -25,27 +31,32 @@
     <br>
     <br>
     <br>
-	<div class="first"> 
+	<br>
+	
+	<div class="top"> 
     <input
       type="image"
-      src="cimu.jpeg"
-	  width="80px"
-	  height="80px"
-      onClick="cimu_start();"/>   
-	<br>
-    <span id="cimu_display"></span>
-    <br>
-	</div>
-	<div class="second"> 
-	<input
-      type="image"
-      src="jiutun.jpeg"
-	  width="80px"
-	  height="80px"
-      onClick="jiutun_start();"/> 
-	<br>
+      src="jiutun_head.png"
+	  width="45%"
+	  height="auto"
+	  style="position:relative;top:7%"
+      onClick="jiutun_start();"/>    
 	<span id="jiutun_display"></span>
+	</div>
+	
+	
     <br>
+
+	
+	<div class="bottom"> 
+	<input
+	  type="image"
+      src="cimu_head.png"
+	  width="45%"
+	  height="auto"
+	  style="position:relative;bottom:7%;left:55%"
+      onClick="cimu_start();"/> 
+	<span id="cimu_display"></span>
     </div>
   <script>
 
@@ -112,4 +123,3 @@
   </script>
 </body>
 </html>
-
